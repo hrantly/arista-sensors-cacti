@@ -5,6 +5,8 @@ if (!isset($_SERVER["argv"][0]) || isset($_SERVER['REQUEST_METHOD'])  || isset($
    die("<br><strong>This script is only meant to run at the command line.</strong>");
 }
 
-$no_http_headers = true;
+if (defined('STDIN')) {
+  $host = $argv[1];
+  $community = $argv[2];
+}
 
-print 'wtf';
