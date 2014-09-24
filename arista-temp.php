@@ -46,10 +46,13 @@ foreach ($res2 as $k2 => $v2) {
 
 
 function define_job ($job) {
-  $res = '';
+  $res = array();
     if (strpos($job, 'temp') === 0 ) {
       if (strpos($job, ':all') !== false) {
-        $res = '';
+        $res['Front-panel temp sensor']['value'] = '100006001';
+        $res['Fan controller 1 sensor'] = '100006002';
+        $res['Fan controller 1 sensor'] = '100006003';
+
       }
       else {
         $exp_job = explode(':', $job);
@@ -61,5 +64,9 @@ function define_job ($job) {
 
 
 function execute_job ($ty[pe]) {
+
+}
+
+function apply_precision ($val, $p) {
 
 }
