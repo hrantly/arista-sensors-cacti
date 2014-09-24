@@ -1,4 +1,4 @@
-Arista Switch Cacti template
+Arista Sensors Cacti template
 =========================
 ## Requirements ##
 1. Arista SW :)   
