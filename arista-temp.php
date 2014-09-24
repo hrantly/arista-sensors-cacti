@@ -11,6 +11,7 @@ if (defined('STDIN')) {
   //sessors table oid
   //$tableOid = '.1.3.6.1.2.1.99.1.1';
   $oid = 'ENTITY-SENSOR-MIB::entPhySensorTable';
+  $desc = 'ENTITY-MIB::entPhysicalDescr';
   // // Front-panel temp sensor
   // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006001';
   // // Fan controller 1 sensor
@@ -28,6 +29,8 @@ if (defined('STDIN')) {
   // var_dump($a);
   $ar = new SNMP(SNMP::VERSION_2C, $host, $community);
   $res = $ar->walk($oid, true);
+  $res2 =  $ar->walk($desc,true);
   print_r($res);
+  print_r($res2);
 }
 
