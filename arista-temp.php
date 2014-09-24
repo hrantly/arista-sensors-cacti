@@ -8,29 +8,58 @@ if (!isset($_SERVER["argv"][0]) || isset($_SERVER['REQUEST_METHOD'])  || isset($
 if (defined('STDIN')) {
   $host = $argv[1];
   $community = $argv[2];
+  $job = $argv[3];
   //sessors table oid
   //$tableOid = '.1.3.6.1.2.1.99.1.1';
   $oid = 'ENTITY-SENSOR-MIB::entPhySensorTable';
   $desc = 'ENTITY-MIB::entPhysicalDescr';
-  // // Front-panel temp sensor
-  // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006001';
-  // // Fan controller 1 sensor
-  // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006002';
-  // // Fan controller 2 sensor
-  // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006003';
-  // // Switch chip 1 sensor
-  // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006004';
-  // // VRM 1 temp sensor
-  // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006005';
-  // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100711101';
-  something
 
-  // $a = snmprealwalk($host, $community, $oid);
-  // var_dump($a);
   $ar = new SNMP(SNMP::VERSION_2C, $host, $community);
-  $res = $ar->walk($oid, true);
+  $res1 = $ar->walk($oid, true);
   $res2 =  $ar->walk($desc,true);
-  print_r($res);
-  print_r($res2);
+//  print_r($res1);
+//  print_r($res2);
 }
 
+$final = array();
+
+foreach ($res2 as $k2 => $v2) {
+  foreach ($res1 as $k1 => $v1) {
+    if  (strpos($k1, '1.1.') === 0)
+    $final[$k2]['si'] = $v1;
+    if  (strpos($k1, '1.2.') === 0)
+    $final[$k2]['metric'] = $v1;
+    if  (strpos($k1, '1.3.') === 0)
+    $final[$k2]['precision'] = $v1;
+    if  (strpos($k1, '1.4.') === 0)
+    $final[$k2]['value'] = $v1;
+    if  (strpos($k1, '1.5.') === 0)
+    $final[$k2]['status'] = $v1;
+    if  (strpos($k1, '1.6.') === 0)
+    $final[$k2]['units'] = $v1;
+
+    $final[$k2]['description'] = $v2;
+
+  }
+}
+
+
+
+function define_job ($job) {
+  $res = '';
+    if (strpos($job, 'temp') === 0 ) {
+      if (strpos($job, ':all') !== false) {
+        $res = '';
+      }
+      else {
+        $exp_job = explode(':', $job);
+        unset($exp_job[0]);
+
+      }     
+    }
+}
+
+
+function execute_job ($ty[pe]) {
+
+}
