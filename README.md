@@ -7,6 +7,6 @@ Arista Temperatures cacti 0.8.8b template
 
 `Do we have something interesting here ?` 
 
-we need this to be line 1    
-and this to be line 2    
+we need this to be line 1 
+and this to be line 2 
 and this to be the last line.
