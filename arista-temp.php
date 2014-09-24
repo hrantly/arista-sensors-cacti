@@ -23,7 +23,7 @@ if (defined('STDIN')) {
   // // VRM 1 temp sensor
   // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006005';
   // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100711101';
-  
+  something
 
   // $a = snmprealwalk($host, $community, $oid);
   // var_dump($a);
