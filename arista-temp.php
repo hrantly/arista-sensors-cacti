@@ -9,7 +9,8 @@ if (defined('STDIN')) {
   $host = $argv[1];
   $community = $argv[2];
   //sessors table oid
-  $tableOid = '.1.3.6.1.2.1.99.1.1';
+  //$tableOid = '.1.3.6.1.2.1.99.1.1';
+  $oid = 'ENTITY-SENSOR-MIB::entPhySensorTable';
   // // Front-panel temp sensor
   // $oid ='ARISTA-ENTITY-SENSOR-MIB::aristaEntSensorStatusDescr.100006001';
   // // Fan controller 1 sensor
