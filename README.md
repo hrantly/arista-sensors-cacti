@@ -1,8 +1,9 @@
-arista-temperatures-cacti
+Arista Switch Cacti template
 =========================
-# Header 1 #
-Arista Temperatures cacti 0.8.8b template
-* * *
+## Requirements ##
+Arista SW :)
+[cacti 0.8.8b](http://cacti.net/download_cacti.php "cacti 0.8.8b")+ (tested, working)
+## Requirements ##
 ![alt text](http://media.canada.com/355383a2-adcc-40e8-b076-36bde4082562/tarasweb.jpg "Title")
 
 `Do we have something interesting here ?` 
