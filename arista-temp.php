@@ -37,36 +37,49 @@ foreach ($res2 as $k2 => $v2) {
     $final[$k2]['status'] = $v1;
     if  (strpos($k1, '1.6.') === 0)
     $final[$k2]['units'] = $v1;
-
     $final[$k2]['description'] = $v2;
-
   }
 }
-
 
 
 function define_job ($job) {
   $res = array();
     if (strpos($job, 'temp') === 0 ) {
       if (strpos($job, ':all') !== false) {
-        $res['Front-panel temp sensor']['value'] = '100006001';
-        $res['Fan controller 1 sensor'] = '100006002';
-        $res['Fan controller 1 sensor'] = '100006003';
-
+        $res['front']['value'] = '100006001';
+        $res['fan1'] = '100006002';
+        $res['fan2'] = '100006003';
+        $res['psu1'] = '100711101';
+        $res['psu2'] = '100721101';
       }
       else {
         $exp_job = explode(':', $job);
         unset($exp_job[0]);
-
+        foreach ($exp_job as $v3) {
+        	$res['rand_' . generateRandomString(10)] = $v3;
+        }
       }     
     }
+    return $res;
 }
 
 
-function execute_job ($ty[pe]) {
-
+function execute_job ($ar) {
+	print_r($ar);
 }
 
 function apply_precision ($val, $p) {
 
 }
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $randomString;
+}
+
+
+execute_job(define_job($job));
