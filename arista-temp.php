@@ -32,7 +32,7 @@ foreach ($res2 as $k2 => $v2) {
     if  (strpos($k1, '1.3.') === 0)
     $final[$k2]['precision'] = $v1;
     if  (strpos($k1, '1.4.') === 0)
-    $final[$k2]['value'] = $v1;``
+    $final[$k2]['value'] = $v1;
     if  (strpos($k1, '1.5.') === 0)
     $final[$k2]['status'] = $v1;
     if  (strpos($k1, '1.6.') === 0)
