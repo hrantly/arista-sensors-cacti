@@ -91,9 +91,9 @@ function execute_job ($ar, $data) {
 
 function apply_precision ($val, $data) {
 	$d = explode(' ', $data);
-	$dInt = (int)$d[1];
+	$dInt = (float)$d[1];
 	$v = explode(' ', $val);
-	$vInt = (int)$v[1];
+	$vInt = (float)$v[1];
 	$res = $vInt / pow(10 , $dInt);
 	return $res;
 }	
