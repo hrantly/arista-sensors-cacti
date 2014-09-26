@@ -83,24 +83,18 @@ function execute_job ($ar, $data) {
 	$string = '';
 	foreach ($ar as $k => $v) {
 		$value = $data['1.4.' . $v];
-		$string .=  $k . ':' . $value . ' ';
+		$string .=  $k . ':' . apply_precision($value, $data['1.3.' . $v]) . ' ';
 	}
 	print_r($string);
 	// comment
 }
 
-function apply_precision ($val, $p) {
+function apply_precision ($val, $data) {
+	$d = explode(' ', $data);
+	$dInt = (int)$d[1];
+	return float($val) / pow(10 , $dInt);
+}	
 
-}
-
-function generateRandomString($length = 10) {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, strlen($characters) - 1)];
-    }
-    return $randomString;
-}
 
 
 execute_job(define_job($job), $res1);
