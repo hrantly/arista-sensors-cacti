@@ -82,11 +82,10 @@ function define_job ($job) {
 function execute_job ($ar, $data) {
 	$string = '';
 	foreach ($ar as $k => $v) {
-		foreach ($data as $kk => $vv) {
-			//if ($v === $)
-		}
+		$value = $data['1.4.' . $v];
+		$string .=  $k . ':' . $value . ' ';
 	}
-	print_r($data);
+	print_r($string);
 	// comment
 }
 
