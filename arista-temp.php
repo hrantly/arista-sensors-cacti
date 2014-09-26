@@ -92,7 +92,7 @@ function execute_job ($ar, $data) {
 function apply_precision ($val, $data) {
 	$d = explode(' ', $data);
 	$dInt = (int)$d[1];
-	$res = float($val) / pow(10 , $dInt);
+	$res = $val / pow(10 , $dInt);
 	return $res;
 }	
 
