@@ -19,7 +19,7 @@ if (defined('STDIN')) {
   $res2 =  $ar->walk($desc,true);
   print_r($res1);
   print_r($res2);
-  die;
+  
 }
 
 $final = array();
