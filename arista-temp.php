@@ -61,7 +61,7 @@ function define_job ($job) {
   $res = array();
     if (strpos($job, 'temp') === 0 ) {
       if (strpos($job, ':all') !== false) {
-        $res['front']['value'] = '100006001';
+        $res['front'] = '100006001';
         $res['fan1'] = '100006002';
         $res['fan2'] = '100006003';
         $res['psu1'] = '100711101';
