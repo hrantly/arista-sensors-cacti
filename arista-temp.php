@@ -82,7 +82,7 @@ function define_job ($job) {
 function execute_job ($ar, $data) {
 	$string = '';
 	foreach ($ar as $k => $v) {
-		if (strpos($data[], 'ok') === false)
+		if (strpos($data['1.5.' . $v], 'ok') === false)
 		exit;
 		$value = $data['1.4.' . $v];
 		$string .=  $k . ':' . apply_precision($value, $data['1.3.' . $v]) . ' ';
