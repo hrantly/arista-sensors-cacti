@@ -26,18 +26,33 @@ $final = array();
 
 foreach ($res2 as $k2 => $v2) {
   foreach ($res1 as $k1 => $v1) {
-  	print_r('k2 is = ' . $k2 . '.v2 .' . $v2 . '. k1 ' . $k1 . ' and v2=' . $v2 . "\n");
-    // if  (strpos($k1, '1.1.') === 0){$final[$k2]['si'] = $v1; echo 'at  1.1. ';}
-    // if  (strpos($k1, '1.2.') === 0){$final[$k2]['metric'] = $v1; echo 'at  1.2. ' . $v1;}
-    // if  (strpos($k1, '1.3.') === 0)
-    // $final[$k2]['precision'] = $v1;
-    // if  (strpos($k1, '1.4.') === 0)
-    // $final[$k2]['value'] = $v1;
-    // if  (strpos($k1, '1.5.') === 0)
-    // $final[$k2]['status'] = $v1;
-    // if  (strpos($k1, '1.6.') === 0)
-    // $final[$k2]['units'] = $v1;
-    // $final[$k2]['description'] = $v2;
+  	//print_r('k2 is = ' . $k2 . '.v2 .' . $v2 . '. k1 ' . $k1 . ' and v2=' . $v2 . "\n");
+    if  (strpos($k1, '1.1.') === 0){
+    	$final[$k2]['si'] = $v1;
+    	break;
+	}
+    if  (strpos($k1, '1.2.') === 0){
+    	$final[$k2]['metric'] = $v1;
+    }
+    if  (strpos($k1, '1.3.') === 0){
+    	$final[$k2]['precision'] = $v1;
+    	break;
+    }
+    
+    if  (strpos($k1, '1.4.') === 0){
+    	$final[$k2]['value'] = $v1;
+    	break;
+    }
+    if  (strpos($k1, '1.5.') === 0){
+    	$final[$k2]['status'] = $v1;
+    	break;
+	}
+    
+    if  (strpos($k1, '1.6.') === 0){
+    	$final[$k2]['units'] = $v1;
+    	break;
+	}
+    $final[$k2]['description'] = $v2;
   }
 }
 
