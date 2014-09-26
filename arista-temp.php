@@ -26,8 +26,8 @@ $final = array();
 
 foreach ($res2 as $k2 => $v2) {
   foreach ($res1 as $k1 => $v1) {
-    if  (strpos($k1, '1.1.') === 0){$final[$k2]['si'] = $v1; echo ' 1.1. ';}
-    if  (strpos($k1, '1.2.') === 0){$final[$k2]['metric'] = $v1; echo ' 1.2. ';}
+    if  (strpos($k1, '1.1.') === 0){$final[$k2]['si'] = $v1; echo 'at  1.1. ';}
+    if  (strpos($k1, '1.2.') === 0){$final[$k2]['metric'] = $v1; echo 'at  1.2. ' . $v1;}
     if  (strpos($k1, '1.3.') === 0)
     $final[$k2]['precision'] = $v1;
     if  (strpos($k1, '1.4.') === 0)
