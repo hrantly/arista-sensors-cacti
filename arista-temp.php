@@ -70,9 +70,7 @@ function define_job ($job) {
       else {
         $exp_job = explode(':', $job);
         unset($exp_job[0]);
-        foreach ($exp_job as $v3) {
-        	$res['rand_' . generateRandomString(10)] = $v3;
-        }
+        var_dump($exp_job);
       }     
     }
     return $res;
