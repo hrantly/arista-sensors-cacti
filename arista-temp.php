@@ -89,4 +89,4 @@ function generateRandomString($length = 10) {
 }
 
 
-execute_job(define_job($job, $final));
+execute_job(define_job($job), $final);
