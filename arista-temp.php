@@ -31,7 +31,9 @@ function define_job ($job) {
         $res['psu1'] = '100711101';
         $res['psu2'] = '100721101';
       }
-      elseif (strpos($job, 'power') === 0) {
+      
+    }
+    elseif (strpos($job, 'power') === 0) {
       	if (strpos($job, ':all') !== false) {
 	        $res['bat'] = '100006100'; // battery V AC
 	        $res['psu1inA'] = '100711102'; // amperes 220AC
@@ -47,7 +49,6 @@ function define_job ($job) {
         	$r1 = explode('-', $v);
         	$res[$r1[0]] = $r1[1];
         }
-      }
     }
     return $res;
 }
