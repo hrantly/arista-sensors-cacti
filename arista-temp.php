@@ -90,12 +90,13 @@ function execute_job ($ar, $data) {
 }
 
 function apply_precision ($val, $data) {
+	var_dump($data);
+	exit;
 	$d = explode(' ', $data);
 	$dInt = (int)$d[1];
 	$res = $val / pow(10 , $dInt);
 	return $res;
 }	
-
 
 
 execute_job(define_job($job), $res1);
