@@ -90,15 +90,11 @@ function execute_job ($ar, $data) {
 }
 
 function apply_precision ($val, $data) {
-	
-	
 	$d = explode(' ', $data);
 	$dInt = (int)$d[1];
 	$v = explode(' ', $val);
 	$vInt = (int)$v[1];
-	var_dump($vInt);
-	exit;
-	$res = $val / pow(10 , $dInt);
+	$res = $vInt / pow(10 , $dInt);
 	return $res;
 }	
 
