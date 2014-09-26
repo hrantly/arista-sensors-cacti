@@ -17,9 +17,9 @@ if (defined('STDIN')) {
   $ar = new SNMP(SNMP::VERSION_2C, $host, $community);
   $res1 = $ar->walk($oid, true);
   //$res2 =  $ar->walk($desc,true);
-  print_r($res1);
+  //print_r($res1);
   //print_r($res2);
-  die;
+  //die;
 }
 
 // $final = array();
