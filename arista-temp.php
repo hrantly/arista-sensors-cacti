@@ -96,7 +96,7 @@ function apply_precision ($val, $data) {
 	$dInt = (int)$d[1];
 	$v = explode(' ', $value);
 	$vInt = (int)$v[1];
-	var_dump($v);
+	var_dump($vInt);
 	exit;
 	$res = $val / pow(10 , $dInt);
 	return $res;
