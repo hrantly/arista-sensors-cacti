@@ -42,6 +42,15 @@ function define_job ($job) {
 	        $res['psu2outA'] = '100721103'; // amperes 220AC
 	    }
       }
+    elseif (strpos($job, 'fan') === 0) {
+      	if (strpos($job, ':all') !== false) {
+	        $res['fan1'] = '100601111'; // battery V AC
+	        $res['fan2'] = '100602111'; // amperes 220AC
+	        $res['fan3'] = '100603111'; // amperes 220AC
+	        $res['fan4'] = '100604111'; // amperes 220AC
+	        $res['fan5'] = '100605111'; // amperes 220AC
+	    }
+      }
       else {
         $exp_job = explode(':', $job);
         unset($exp_job[0]);
