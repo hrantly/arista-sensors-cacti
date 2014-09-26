@@ -64,8 +64,14 @@ function define_job ($job) {
 }
 
 
-function execute_job ($ar) {
-	print_r($ar);
+function execute_job ($ar, $data) {
+	$string = '';
+	foreach ($ar as $k => $v) {
+		foreach ($data as $kk => $vv) {
+			//if ($v === $)
+		}
+	}
+	print_r($data);
 	// comment
 }
 
@@ -83,4 +89,4 @@ function generateRandomString($length = 10) {
 }
 
 
-execute_job(define_job($job));
+execute_job(define_job($job, $final));
