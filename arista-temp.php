@@ -70,6 +70,7 @@ function define_job ($job) {
       else {
         $exp_job = explode(':', $job);
         unset($exp_job[0]);
+        var_dump($exp_job);
         foreach ($exp_job as $v) {
         	$r1 = explode('-', $v);
         	$res[$r1[0]] = $$r1[1];
