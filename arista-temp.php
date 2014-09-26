@@ -94,7 +94,7 @@ function apply_precision ($val, $data) {
 	
 	$d = explode(' ', $data);
 	$dInt = (int)$d[1];
-	$v = explode(' ', $value);
+	$v = explode(' ', $val);
 	$vInt = (int)$v[1];
 	var_dump($vInt);
 	exit;
