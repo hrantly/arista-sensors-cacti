@@ -47,7 +47,7 @@ function define_job ($job) {
         	$r1 = explode('-', $v);
         	$res[$r1[0]] = $r1[1];
         }
-      }     
+      }
     }
     return $res;
 }
