@@ -26,8 +26,19 @@ function define_job ($job) {
         $res['front'] = '100006001';
         $res['fan1'] = '100006002';
         $res['fan2'] = '100006003';
+        $res['chip'] = '100006004';
+        $res['vrm'] = '100006005';
         $res['psu1'] = '100711101';
         $res['psu2'] = '100721101';
+      }
+      elseif (strpos($job, 'power') === 0) {
+      	if (strpos($job, ':all') !== false) {
+	        $res['bat'] = '100006100'; // battery V AC
+	        $res['psu1inA'] = '100711102'; // amperes 220AC
+	        $res['psu2inA'] = '100721102'; // amperes 220AC
+	        $res['psu1outA'] = '100711103'; // amperes 220AC
+	        $res['psu2outA'] = '100721103'; // amperes 220AC
+	    }
       }
       else {
         $exp_job = explode(':', $job);
