@@ -128,7 +128,7 @@
 	<hash_0300242d2b2cc09c05c741290568f91ba82aaa>
 		<name>Arista_Chassis_Temp_ogi</name>
 		<type_id>1</type_id>
-		<input_string>&lt;path_php_binary&gt; -q &lt;path_cacti&gt;/scripts/arista-temp.php  &lt;hostname&gt; &lt;community&gt; temp:all</input_string>
+		<input_string>&lt;path_php_binary&gt; -q &lt;path_cacti&gt;/scripts/arista-sensors.php  &lt;hostname&gt; &lt;community&gt; temp:all</input_string>
 		<fields>
 			<hash_0700243d2fa8ddfdffc7c24c8dfba16b104a61>
 				<name>hostname</name>

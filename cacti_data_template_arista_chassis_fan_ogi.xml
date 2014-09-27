@@ -1,10 +1,10 @@
 <cacti>	
-	<hash_010024e10ce1087963b904cb507f1325700683>
-		<name>Arista_Chassis_Power_ogi</name>
+	<hash_010024ce4fd121589880252addbd5b7266fe5b>
+		<name>Arista_Chassis_Fan_ogi</name>
 		<ds>
 			<t_name></t_name>
-			<name>|host_description| - Chassis Power</name>
-			<data_input_id>hash_030024524d8a8392cc716cfd8969cae23e173e</data_input_id>
+			<name>|host_description| - Chassis Fans</name>
+			<data_input_id>hash_03002412b7fb73d9366b237bd6b195eede4ba0</data_input_id>
 			<t_rra_id></t_rra_id>
 			<t_rrd_step></t_rrd_step>
 			<rrd_step>300</rrd_step>
@@ -13,9 +13,9 @@
 			<rra_items>hash_150024c21df5178e5c955013591239eb0afd46|hash_1500240d9c0af8b8acdc7807943937b3208e29|hash_1500246fc2d038fb42950138b0ce3e9874cc60|hash_150024e36f3adb9f152adfa5dc50fd2b23337e|hash_150024283ea2bf1634d92ce081ec82a634f513</rra_items>
 		</ds>
 		<items>
-			<hash_08002427515a5064c83f355b001eee2433eb2b>
+			<hash_080024f561850a496f629292ae71f4a7ee883b>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>bat</data_source_name>
+				<data_source_name>fan1</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
@@ -25,11 +25,11 @@
 				<t_rrd_heartbeat></t_rrd_heartbeat>
 				<rrd_heartbeat>600</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_0700241f1b03ad7f3009e0736066f8769c1d05</data_input_field_id>
-			</hash_08002427515a5064c83f355b001eee2433eb2b>
-			<hash_0800241da1300327bf74328f254b521959d25a>
+				<data_input_field_id>0</data_input_field_id>
+			</hash_080024f561850a496f629292ae71f4a7ee883b>
+			<hash_080024fe0e32dd6ffdb5c67331c0f9c143709e>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>psu1inA</data_source_name>
+				<data_source_name>fan2</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
@@ -39,11 +39,11 @@
 				<t_rrd_heartbeat></t_rrd_heartbeat>
 				<rrd_heartbeat>600</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070024ac0d1113b9d231e7a7f7b07d2e96fd2a</data_input_field_id>
-			</hash_0800241da1300327bf74328f254b521959d25a>
-			<hash_08002489166839b24af9efb630d01f0e2cbe2d>
+				<data_input_field_id>hash_07002425fad6b3dd39e00f6cfe88e90397cd6e</data_input_field_id>
+			</hash_080024fe0e32dd6ffdb5c67331c0f9c143709e>
+			<hash_080024cb586a51a2c782e55adece8151d9a5f7>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>psu2inA</data_source_name>
+				<data_source_name>fan3</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
@@ -53,11 +53,11 @@
 				<t_rrd_heartbeat></t_rrd_heartbeat>
 				<rrd_heartbeat>600</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070024114874c2610541d53bc8df4f03aedf8a</data_input_field_id>
-			</hash_08002489166839b24af9efb630d01f0e2cbe2d>
-			<hash_0800244f1bc6a5df4d4b73bdaf4bb653c888e4>
+				<data_input_field_id>hash_07002419c7be972f080448f8b0451d3b5cc8c9</data_input_field_id>
+			</hash_080024cb586a51a2c782e55adece8151d9a5f7>
+			<hash_0800242ac08d2b1d99b5653cf89997685ca6f7>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>psu1outA</data_source_name>
+				<data_source_name>fan4</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
@@ -67,11 +67,11 @@
 				<t_rrd_heartbeat></t_rrd_heartbeat>
 				<rrd_heartbeat>600</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070024408b90e9f990c9aa905f6af4ee95913c</data_input_field_id>
-			</hash_0800244f1bc6a5df4d4b73bdaf4bb653c888e4>
-			<hash_080024860360bdcc42a9507b735aa5007cdc95>
+				<data_input_field_id>hash_0700248e762f16e72caa2d35c9c0769f025bf7</data_input_field_id>
+			</hash_0800242ac08d2b1d99b5653cf89997685ca6f7>
+			<hash_080024e5c1a2098b2d2af2cde8916dcc29e9e9>
 				<t_data_source_name></t_data_source_name>
-				<data_source_name>psu2outA</data_source_name>
+				<data_source_name>fan5</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
 				<rrd_minimum>0</rrd_minimum>
 				<t_rrd_maximum></t_rrd_maximum>
@@ -81,28 +81,28 @@
 				<t_rrd_heartbeat></t_rrd_heartbeat>
 				<rrd_heartbeat>600</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_07002447252ab3ab4a4b316145e6bbbfc21146</data_input_field_id>
-			</hash_080024860360bdcc42a9507b735aa5007cdc95>
+				<data_input_field_id>hash_07002441c8545e97a5acb9283d335df0fb82d9</data_input_field_id>
+			</hash_080024e5c1a2098b2d2af2cde8916dcc29e9e9>
 		</items>
 		<data>
 			<item_000>
-				<data_input_field_id>hash_070024978bcfe8e96f3200617cdb2f8745b4b6</data_input_field_id>
+				<data_input_field_id>hash_07002430093201e0fc94fa205b8e8a27b2fa70</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_000>
 			<item_001>
-				<data_input_field_id>hash_070024482e1f1179dca6e5ee6c431b8b17fc4e</data_input_field_id>
+				<data_input_field_id>hash_0700248e0e66d7ca3a9a0c073252964010b72c</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_001>
 		</data>
-	</hash_010024e10ce1087963b904cb507f1325700683>
-	<hash_030024524d8a8392cc716cfd8969cae23e173e>
-		<name>Arista_Chassis_Power_ogi</name>
+	</hash_010024ce4fd121589880252addbd5b7266fe5b>
+	<hash_03002412b7fb73d9366b237bd6b195eede4ba0>
+		<name>Arista_Chassis_Fan_ogi</name>
 		<type_id>1</type_id>
-		<input_string>&lt;path_php_binary&gt; -q &lt;path_cacti&gt;/scripts/arista-sensors.php  &lt;hostname&gt; &lt;community&gt; power:all</input_string>
+		<input_string>&lt;path_php_binary&gt; -q &lt;path_cacti&gt;/scripts/arista-sensors.php  &lt;hostname&gt; &lt;community&gt; fan:all</input_string>
 		<fields>
-			<hash_070024482e1f1179dca6e5ee6c431b8b17fc4e>
+			<hash_0700248e0e66d7ca3a9a0c073252964010b72c>
 				<name>hostname</name>
 				<update_rra></update_rra>
 				<regexp_match></regexp_match>
@@ -110,8 +110,8 @@
 				<type_code>hostname</type_code>
 				<input_output>in</input_output>
 				<data_name>hostname</data_name>
-			</hash_070024482e1f1179dca6e5ee6c431b8b17fc4e>
-			<hash_070024978bcfe8e96f3200617cdb2f8745b4b6>
+			</hash_0700248e0e66d7ca3a9a0c073252964010b72c>
+			<hash_07002430093201e0fc94fa205b8e8a27b2fa70>
 				<name>snmp_community</name>
 				<update_rra></update_rra>
 				<regexp_match></regexp_match>
@@ -119,54 +119,54 @@
 				<type_code>snmp_community</type_code>
 				<input_output>in</input_output>
 				<data_name>community</data_name>
-			</hash_070024978bcfe8e96f3200617cdb2f8745b4b6>
-			<hash_0700241f1b03ad7f3009e0736066f8769c1d05>
-				<name>bat</name>
+			</hash_07002430093201e0fc94fa205b8e8a27b2fa70>
+			<hash_0700242f33eebd92c9d3d5c0350c1c58766d78>
+				<name>fan1</name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>bat</data_name>
-			</hash_0700241f1b03ad7f3009e0736066f8769c1d05>
-			<hash_070024ac0d1113b9d231e7a7f7b07d2e96fd2a>
-				<name>psu1inA</name>
+				<data_name>fan1</data_name>
+			</hash_0700242f33eebd92c9d3d5c0350c1c58766d78>
+			<hash_07002425fad6b3dd39e00f6cfe88e90397cd6e>
+				<name>fan2</name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>psu1inA</data_name>
-			</hash_070024ac0d1113b9d231e7a7f7b07d2e96fd2a>
-			<hash_070024114874c2610541d53bc8df4f03aedf8a>
-				<name>psu2inA</name>
+				<data_name>fan2</data_name>
+			</hash_07002425fad6b3dd39e00f6cfe88e90397cd6e>
+			<hash_07002419c7be972f080448f8b0451d3b5cc8c9>
+				<name>fan3</name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>psu2inA</data_name>
-			</hash_070024114874c2610541d53bc8df4f03aedf8a>
-			<hash_070024408b90e9f990c9aa905f6af4ee95913c>
-				<name>psu1outA</name>
+				<data_name>fan3</data_name>
+			</hash_07002419c7be972f080448f8b0451d3b5cc8c9>
+			<hash_0700248e762f16e72caa2d35c9c0769f025bf7>
+				<name>fan4</name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>psu1outA</data_name>
-			</hash_070024408b90e9f990c9aa905f6af4ee95913c>
-			<hash_07002447252ab3ab4a4b316145e6bbbfc21146>
-				<name>psu2outA</name>
+				<data_name>fan4</data_name>
+			</hash_0700248e762f16e72caa2d35c9c0769f025bf7>
+			<hash_07002441c8545e97a5acb9283d335df0fb82d9>
+				<name>fan5</name>
 				<update_rra>on</update_rra>
 				<regexp_match></regexp_match>
 				<allow_nulls></allow_nulls>
 				<type_code></type_code>
 				<input_output>out</input_output>
-				<data_name>psu2outA</data_name>
-			</hash_07002447252ab3ab4a4b316145e6bbbfc21146>
+				<data_name>fan5</data_name>
+			</hash_07002441c8545e97a5acb9283d335df0fb82d9>
 		</fields>
-	</hash_030024524d8a8392cc716cfd8969cae23e173e>
+	</hash_03002412b7fb73d9366b237bd6b195eede4ba0>
 	<hash_150024c21df5178e5c955013591239eb0afd46>
 		<name>Daily (5 Minute Average)</name>
 		<x_files_factor>0.5</x_files_factor>

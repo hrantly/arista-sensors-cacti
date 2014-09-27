@@ -62,7 +62,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format></text_format>
+				<text_format>current:</text_format>
 				<hard_return></hard_return>
 				<sequence>2</sequence>
 			</hash_100024d9047e97244e3139f8d197dfb1d071d3>
@@ -75,7 +75,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>max:</text_format>
+				<text_format>maximum:</text_format>
 				<hard_return>on</hard_return>
 				<sequence>3</sequence>
 			</hash_100024882a9f26b5039b6f37570ba168e7dc5f>
@@ -101,7 +101,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format></text_format>
+				<text_format>current:</text_format>
 				<hard_return></hard_return>
 				<sequence>5</sequence>
 			</hash_100024ea9568df60e119072786556f4f76a114>
@@ -114,7 +114,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>max:</text_format>
+				<text_format>maximum:</text_format>
 				<hard_return></hard_return>
 				<sequence>6</sequence>
 			</hash_1000241fc938bd984d8a881fc240f3da6a9b67>
@@ -140,7 +140,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format></text_format>
+				<text_format>current:</text_format>
 				<hard_return></hard_return>
 				<sequence>8</sequence>
 			</hash_100024f6448853a0c810b71858c9be4e8511de>
@@ -153,7 +153,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>max:</text_format>
+				<text_format>maximum:</text_format>
 				<hard_return>on</hard_return>
 				<sequence>9</sequence>
 			</hash_100024f2b8a0bb758140dd2c22ecf4c050c07f>
@@ -179,7 +179,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format></text_format>
+				<text_format>current:</text_format>
 				<hard_return></hard_return>
 				<sequence>11</sequence>
 			</hash_1000248a1908d4e1faff640332f6f112bb6510>
@@ -192,7 +192,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>max:</text_format>
+				<text_format>maximum:</text_format>
 				<hard_return></hard_return>
 				<sequence>12</sequence>
 			</hash_100024cb6b9d9ddf16b0344f47931e3f5fcc1e>
@@ -218,7 +218,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format></text_format>
+				<text_format>current:</text_format>
 				<hard_return></hard_return>
 				<sequence>14</sequence>
 			</hash_1000248a7ac44f6f095b671a19d490b3a3b113>
@@ -231,7 +231,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>max:</text_format>
+				<text_format>maximum:</text_format>
 				<hard_return>on</hard_return>
 				<sequence>15</sequence>
 			</hash_1000247a7d7a6572bcb36e719ccd7c6bddb233>
@@ -257,7 +257,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format></text_format>
+				<text_format>current:</text_format>
 				<hard_return></hard_return>
 				<sequence>17</sequence>
 			</hash_100024f95e9061d279d1e7b868a215a2e7a475>
@@ -270,7 +270,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>max:</text_format>
+				<text_format>maximum:</text_format>
 				<hard_return>on</hard_return>
 				<sequence>18</sequence>
 			</hash_1000242011051a6cfd4adc832dd7d122d061a9>
@@ -296,7 +296,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format></text_format>
+				<text_format>current:</text_format>
 				<hard_return></hard_return>
 				<sequence>20</sequence>
 			</hash_1000240c36066b5d9959807d43591d592d37e3>
@@ -309,7 +309,7 @@
 				<cdef_id>0</cdef_id>
 				<value></value>
 				<gprint_id>hash_06002419414480d6897c8731c7dc6c5310653e</gprint_id>
-				<text_format>max:</text_format>
+				<text_format>maximum:</text_format>
 				<hard_return>on</hard_return>
 				<sequence>21</sequence>
 			</hash_100024da07ef59ad053c37e0f946a7c571f27c>
@@ -501,7 +501,7 @@
 	<hash_0300242d2b2cc09c05c741290568f91ba82aaa>
 		<name>Arista_Chassis_Temp_ogi</name>
 		<type_id>1</type_id>
-		<input_string>&lt;path_php_binary&gt; -q &lt;path_cacti&gt;/scripts/arista-temp.php  &lt;hostname&gt; &lt;community&gt; temp:all</input_string>
+		<input_string>&lt;path_php_binary&gt; -q &lt;path_cacti&gt;/scripts/arista-sensors.php  &lt;hostname&gt; &lt;community&gt; temp:all</input_string>
 		<fields>
 			<hash_0700243d2fa8ddfdffc7c24c8dfba16b104a61>
 				<name>hostname</name>
